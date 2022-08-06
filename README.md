@@ -1,10 +1,11 @@
 # [ECCV2022] MorphMLP \[[arxiv](https://arxiv.org/abs/2111.12527)\]
 
-We currenent release the code and models for:
+We current release the code and models for:
 
 - [x] Kintics-400
 - [x] Something-Something V1
 - [x] Something-Something V2
+-  ImageNet-1K： For our models training/testing on ImageNet-1K，and how to transfer the pretrained weight for video usage， you can refer [IMAGE.md](mlp_images/IMAGE.md). 
 
 
 
