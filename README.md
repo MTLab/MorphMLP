@@ -1,5 +1,7 @@
 # [ECCV2022] MorphMLP \[[arxiv](https://arxiv.org/abs/2111.12527)\]
 
+Our MorphMLP paper was accepted to ECCV 2022！！
+
 We current release the code and models for:
 
 - [x] Kintics-400
