@@ -141,5 +141,5 @@ If you find this repository useful, please use the following BibTeX entry for ci
 
 ## Acknowledgement
 
-This repository is built based on [SlowFast](https://github.com/facebookresearch/SlowFast) and [Uniformer](https://github.com/Sense-X/UniFormer)repository.
+This repository is built based on [SlowFast](https://github.com/facebookresearch/SlowFast) and [Uniformer] (https://github.com/Sense-X/UniFormer)repository.
 
