@@ -72,46 +72,7 @@ class MorphFC_S2(nn.Module):
         x = self.proj_drop(x)
 
         return x
-# class WeightedPermuteMLP(nn.Module):
-#     def __init__(self, dim, segment_dim=8, qkv_bias=False, qk_scale=None, attn_drop=0., proj_drop=0.):
-#         super().__init__()
-#         self.segment_dim = segment_dim
-#
-#         self.mlp_h = nn.Linear(dim, dim, bias=qkv_bias)
-#         self.mlp_w = nn.Linear(dim, dim, bias=qkv_bias)
-#         self.mlp_c = nn.Linear(dim, dim, bias=qkv_bias)
-#
-#         # init weight problem
-#         self.reweight = Mlp(dim, dim // 4, dim * 3)
-#
-#         self.proj = nn.Linear(dim, dim)
-#         self.proj_drop = nn.Dropout(proj_drop)
-#
-#     def forward(self, x):
-#         B, T, H, W, C = x.shape
-#
-#         S = C // self.segment_dim
-#         tmp=self.segment_dim
-#         # H
-#         h = x.reshape(B, T,tmp, H*W//tmp, self.segment_dim, S).permute(0, 1, 4, 3, 2, 5).reshape(B, T, self.segment_dim, H*W//tmp,
-#                                                                                          tmp * S)
-#         h = self.mlp_h(h).reshape(B, T, self.segment_dim, H*W//tmp,tmp, S).permute(0, 1, 4, 3, 2, 5).reshape(B, T, H, W, C)
-#         # W
-#         w = x.reshape(B, T, H* W//tmp,tmp, self.segment_dim, S).permute(0, 1, 2, 4, 3, 5).reshape(B, T,  H*W//tmp,self.segment_dim,
-#                                                                                          tmp* S)
-#         w = self.mlp_w(w).reshape(B, T, H*W//tmp,self.segment_dim, tmp,S).permute(0, 1, 2, 4, 3, 5).reshape(B, T, H, W, C)
-#         # C
-#         c = self.mlp_c(x)
-#
-#         a = (h + w + c).permute(0, 4, 1, 2, 3).flatten(2).mean(2)
-#         a = self.reweight(a).reshape(B, C, 3).permute(2, 0, 1).softmax(dim=0).unsqueeze(2).unsqueeze(2).unsqueeze(2)
-#
-#         x = h * a[0] + w * a[1] + c * a[2]
-#
-#         x = self.proj(x)
-#         x = self.proj_drop(x)
-#
-#         return x
+
 class MorphFC_S(nn.Module):
     def __init__(self, dim, segment_dim=8, qkv_bias=False, qk_scale=None, attn_drop=0., proj_drop=0.):
         super().__init__()
