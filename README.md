@@ -30,7 +30,7 @@ We current release the code and models for:
 
 ### Note
 
-- All the models are pretrained on ImageNet-1K. You can find those pre-trained models in [pretrained](https://drive.google.com/drive/folders/105DRws977iNnjEv-Hjfix5Q3JtzqoDUm?usp=sharing).
+- All the models are pretrained on ImageNet-1K. You can find those pre-trained models in [pretrained](https://drive.google.com/drive/folders/105DRws977iNnjEv-Hjfix5Q3JtzqoDUm?usp=sharing) and put them in `pretrained` folder.
 -  \#Frame = \#input_frame x \#crop x \#clip
   - \#input_frame means how many frames are input for model per inference
   - \#crop means spatial crops (e.g., 3 for left/right/center)
