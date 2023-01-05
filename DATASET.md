@@ -31,6 +31,6 @@ Note that we use `decord` to decode the Kinetics videos on the fly.
 `ffmpeg -i "${video}" -r 30 -q:v 1 "${out_name}"`
    in experiments.) Please put the frames in a structure consistent with the frame lists.
 
-Please put all annotation json files and the frame lists in the same folder, and set `DATA.PATH_TO_DATA_DIR` to the path. Set `DATA.PATH_PREFIX` to be the path to the folder containing extracted frames.
+Please put all annotation json files and the frame lists in the same folder, and set `DATA.PATH_TO_DATA_DIR` to this folder path e.g., `data_list/sthv1` and `data_list/sthv2`. Set `DATA.PATH_PREFIX` to be the path to the folder containing extracted frames.
 
 > Since the web page of 20BN is not accessible, we will provide the raw datasets if necessary.
