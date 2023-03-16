@@ -26,7 +26,7 @@ We current release the code and models for:
 
 > The ImageNet-1K pretrained models, followed models and logs can be downloaded on **Google Drive**: [total_models](https://drive.google.com/drive/folders/1VIJTQtc69l11MxDNiq-OzyPEAlUVNHIx?usp=sharing).
 >
-> We also release the models on **Baidu Cloud**: [total_models (cjwu)](https://pan.baidu.com/s/11oYfumslhIf7pdG3M-jYlQ).
+> We also release the models on **Baidu Cloud**: [total_models (bbyy)](https://pan.baidu.com/s/1L3leT9MrqzGhSMFPTPhsow?pwd=bbyy).
 
 ### Note
 
